@@ -1,0 +1,171 @@
+.how-to-buy-section {
+  padding: 70px 0 80px 0;
+  background-color: #faf4e6;
+  border-top: none;
+  border-bottom: none;
+}
+
+.how-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+  gap: 24px;
+}
+
+.how-title {
+  font-family: 'Jost', 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #5c483c;
+  margin: 0;
+}
+
+.how-header-info {
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #5c483c;
+  line-height: 1.5;
+}
+
+.how-header-info p {
+  margin: 0;
+}
+
+.how-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #dcd2c4;
+  margin-bottom: 48px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 56px;
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-number {
+  font-family: 'Jost', 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #a2ba9e;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.step-title {
+  font-family: 'Jost', 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #a2ba9e;
+  margin-bottom: 16px;
+}
+
+.step-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #5c483c;
+  line-height: 1.55;
+  max-width: 320px;
+  margin: 0;
+}
+
+.how-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.btn-how-primary {
+  display: inline-block;
+  background-color: #5c483c;
+  color: #ffffff;
+  font-family: 'Jost', 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 999px;
+  transition: all var(--transition-fast);
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.btn-how-primary:hover {
+  background-color: #47362c;
+  transform: translateY(-1px);
+}
+
+.btn-how-existing {
+  font-family: 'Jost', 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #5c483c;
+  transition: opacity var(--transition-fast);
+}
+
+.btn-how-existing:hover {
+  opacity: 0.8;
+}
+
+.underline-text {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 992px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .how-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .how-header-info {
+    text-align: left;
+  }
+
+  .how-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .how-to-buy-section {
+    padding: 50px 0;
+  }
+
+  .how-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .btn-how-primary {
+    text-align: center;
+  }
+
+  .btn-how-existing {
+    text-align: center;
+  }
+}

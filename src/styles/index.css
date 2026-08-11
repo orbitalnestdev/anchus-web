@@ -1,0 +1,75 @@
+/* ==========================================================================
+   ANCHUS DESIGN SYSTEM & STYLES (Based on Anchus.News (1).pdf mockup)
+   ========================================================================== */
+
+:root {
+  --color-primary: #5c483c;
+  --color-secondary: #5c483c;
+  --color-sage: #a2ba9e;
+  --color-sage-light: #9eb598;
+  --color-cream: #faf4e6;
+  --color-white: #ffffff;
+
+  --font-main: 'Jost', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --max-width: 1240px;
+  --header-height: 90px;
+
+  --transition-fast: 0.25s ease;
+  --transition-normal: 0.35s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 112px;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}

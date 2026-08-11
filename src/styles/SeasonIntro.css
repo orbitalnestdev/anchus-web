@@ -1,0 +1,92 @@
+.season-intro-section {
+  padding: 80px 0 70px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.season-intro-content {
+  max-width: 840px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.season-tagline {
+  display: block;
+  font-family: 'Jost', 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.38em;
+  color: #a2ba9e;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.season-title {
+  font-family: 'Jost', 'Montserrat', sans-serif;
+  font-size: 46px;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  color: #a2ba9e;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  line-height: 1.15;
+}
+
+.season-line-1,
+.season-line-2 {
+  font-family: 'Montserrat', 'Jost', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #5c483c;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.season-line-1 {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 992px) {
+  .season-intro-section {
+    padding: 60px 0 50px 0;
+  }
+
+  .season-title {
+    font-size: 34px;
+    letter-spacing: 0.2em;
+  }
+
+  .season-tagline {
+    font-size: 12px;
+    letter-spacing: 0.3em;
+  }
+
+  .season-line-1,
+  .season-line-2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .season-intro-section {
+    padding: 40px 0;
+  }
+
+  .season-title {
+    font-size: 24px;
+    letter-spacing: 0.15em;
+  }
+
+  .season-tagline {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+  }
+
+  .season-line-1,
+  .season-line-2 {
+    font-size: 13px;
+  }
+}

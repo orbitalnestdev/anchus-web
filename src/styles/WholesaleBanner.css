@@ -1,0 +1,75 @@
+.wholesale-banner-section {
+  padding: 85px 0;
+  background-color: #5c483c;
+  text-align: center;
+}
+
+.wholesale-banner-content {
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wholesale-banner-title {
+  font-family: 'Jost', 'Montserrat', sans-serif;
+  font-size: 38px;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #faf4e6;
+  margin: 0 0 20px 0;
+}
+
+.wholesale-banner-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #faf4e6;
+  margin: 0 0 36px 0;
+}
+
+.wholesale-banner-action {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-wholesale-primary {
+  display: inline-block;
+  background-color: #faf4e6;
+  color: #5c483c;
+  font-family: 'Jost', 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  border-radius: 999px;
+  transition: all var(--transition-fast);
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-wholesale-primary:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .wholesale-banner-section {
+    padding: 60px 0;
+  }
+
+  .wholesale-banner-title {
+    font-size: 26px;
+    letter-spacing: 0.18em;
+  }
+
+  .wholesale-banner-subtitle {
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+}
