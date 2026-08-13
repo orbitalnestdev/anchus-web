@@ -20,11 +20,18 @@ export default function Header() {
         <div className="container header-container">
           {/* Logo Image */}
           <a href="#" className="site-logo-link">
-            <img 
-              src="/assets/logo.png" 
-              alt="Anchus Trip of Joy" 
-              className="site-logo-img" 
-            />
+            <picture>
+              <source type="image/avif" srcSet="/assets/logo.avif" />
+              <source type="image/webp" srcSet="/assets/logo.webp" />
+              <img 
+                src="/assets/logo.png" 
+                alt="Anchus Trip of Joy" 
+                width="160"
+                height="47"
+                decoding="async"
+                className="site-logo-img" 
+              />
+            </picture>
           </a>
 
           {/* Desktop Navigation Links */}

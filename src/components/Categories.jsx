@@ -6,11 +6,11 @@ export default function Categories() {
   const catalogUrl = "https://anchus.com.ar/mayorista/zonaprivada.php";
 
   const categoriesData = [
-    { id: 1, title: 'RECIÉN NACIDO', imageSrc: '/assets/categorias/59.png' },
-    { id: 2, title: 'BEBÉS', imageSrc: '/assets/categorias/60.png' },
-    { id: 3, title: 'NENAS', imageSrc: '/assets/categorias/61.png' },
-    { id: 4, title: 'NENES', imageSrc: '/assets/categorias/62.png' },
-    { id: 5, title: 'COLEGIAL', imageSrc: '/assets/categorias/63.png' },
+    { id: 1, title: 'RECIÉN NACIDO', imageBase: '/assets/categorias/59' },
+    { id: 2, title: 'BEBÉS', imageBase: '/assets/categorias/60' },
+    { id: 3, title: 'NENAS', imageBase: '/assets/categorias/61' },
+    { id: 4, title: 'NENES', imageBase: '/assets/categorias/62' },
+    { id: 5, title: 'COLEGIAL', imageBase: '/assets/categorias/63' },
   ];
 
   return (
@@ -36,7 +36,7 @@ export default function Categories() {
               <CategoryCard
                 key={cat.id}
                 title={cat.title}
-                imageSrc={cat.imageSrc}
+                imageBase={cat.imageBase}
                 altText={cat.title}
               />
             ))}
