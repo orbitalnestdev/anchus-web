@@ -7,19 +7,19 @@ export default function CategoryCard({ title, imageBase, altText }) {
         <picture>
           <source 
             type="image/avif" 
-            srcSet={`${imageBase}_600.avif 600w, ${imageBase}_350.avif 350w`}
+            srcSet={`${imageBase}_350.avif 350w, ${imageBase}.avif 550w`}
             sizes="(max-width: 576px) 50vw, (max-width: 992px) 33vw, 20vw"
           />
           <source 
             type="image/webp" 
-            srcSet={`${imageBase}_600.webp 600w, ${imageBase}_350.webp 350w`}
+            srcSet={`${imageBase}_350.webp 350w, ${imageBase}.webp 550w`}
             sizes="(max-width: 576px) 50vw, (max-width: 992px) 33vw, 20vw"
           />
           <img 
             src={`${imageBase}.png`} 
             alt={altText || title} 
-            width="600"
-            height="800"
+            width="550"
+            height="733"
             loading="lazy"
             decoding="async"
             className="category-image" 

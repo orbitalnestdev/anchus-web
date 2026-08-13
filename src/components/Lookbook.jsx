@@ -28,19 +28,19 @@ export default function Lookbook() {
               <picture>
                 <source 
                   type="image/avif" 
-                  srcSet="/assets/lookbook/67_600.avif 600w, /assets/lookbook/67_350.avif 350w"
+                  srcSet="/assets/lookbook/67_350.avif 350w, /assets/lookbook/67_600.avif 600w, /assets/lookbook/67.avif 835w"
                   sizes="(max-width: 992px) 100vw, 40vw"
                 />
                 <source 
                   type="image/webp" 
-                  srcSet="/assets/lookbook/67_600.webp 600w, /assets/lookbook/67_350.webp 350w"
+                  srcSet="/assets/lookbook/67_350.webp 350w, /assets/lookbook/67_600.webp 600w, /assets/lookbook/67.webp 835w"
                   sizes="(max-width: 992px) 100vw, 40vw"
                 />
                 <img 
                   src="/assets/lookbook/67.png" 
                   alt="Anchus Lookbook - Nenes" 
-                  width="600"
-                  height="800"
+                  width="835"
+                  height="626"
                   loading="lazy"
                   decoding="async"
                   className="lookbook-img" 
@@ -55,19 +55,19 @@ export default function Lookbook() {
               <picture>
                 <source 
                   type="image/avif" 
-                  srcSet="/assets/lookbook/64_800.avif 800w, /assets/lookbook/64_450.avif 450w"
+                  srcSet="/assets/lookbook/64_450.avif 450w, /assets/lookbook/64_800.avif 800w, /assets/lookbook/64.avif 835w"
                   sizes="(max-width: 992px) 50vw, 30vw"
                 />
                 <source 
                   type="image/webp" 
-                  srcSet="/assets/lookbook/64_800.webp 800w, /assets/lookbook/64_450.webp 450w"
+                  srcSet="/assets/lookbook/64_450.webp 450w, /assets/lookbook/64_800.webp 800w, /assets/lookbook/64.webp 835w"
                   sizes="(max-width: 992px) 50vw, 30vw"
                 />
                 <img 
                   src="/assets/lookbook/64.png" 
                   alt="Anchus Lookbook - Bebés" 
-                  width="800"
-                  height="600"
+                  width="835"
+                  height="626"
                   loading="lazy"
                   decoding="async"
                   className="lookbook-img" 
@@ -78,19 +78,19 @@ export default function Lookbook() {
               <picture>
                 <source 
                   type="image/avif" 
-                  srcSet="/assets/lookbook/68_600.avif 600w, /assets/lookbook/68_350.avif 350w"
+                  srcSet="/assets/lookbook/68_350.avif 350w, /assets/lookbook/68_600.avif 600w, /assets/lookbook/68.avif 835w"
                   sizes="(max-width: 992px) 50vw, 30vw"
                 />
                 <source 
                   type="image/webp" 
-                  srcSet="/assets/lookbook/68_600.webp 600w, /assets/lookbook/68_350.webp 350w"
+                  srcSet="/assets/lookbook/68_350.webp 350w, /assets/lookbook/68_600.webp 600w, /assets/lookbook/68.webp 835w"
                   sizes="(max-width: 992px) 50vw, 30vw"
                 />
                 <img 
                   src="/assets/lookbook/68.png" 
                   alt="Anchus Lookbook - Nenas" 
-                  width="600"
-                  height="450"
+                  width="835"
+                  height="626"
                   loading="lazy"
                   decoding="async"
                   className="lookbook-img" 
@@ -105,19 +105,19 @@ export default function Lookbook() {
               <picture>
                 <source 
                   type="image/avif" 
-                  srcSet="/assets/lookbook/65_600.avif 600w, /assets/lookbook/65_350.avif 350w"
+                  srcSet="/assets/lookbook/65_350.avif 350w, /assets/lookbook/65_600.avif 600w, /assets/lookbook/65.avif 835w"
                   sizes="(max-width: 992px) 50vw, 30vw"
                 />
                 <source 
                   type="image/webp" 
-                  srcSet="/assets/lookbook/65_600.webp 600w, /assets/lookbook/65_350.webp 350w"
+                  srcSet="/assets/lookbook/65_350.webp 350w, /assets/lookbook/65_600.webp 600w, /assets/lookbook/65.webp 835w"
                   sizes="(max-width: 992px) 50vw, 30vw"
                 />
                 <img 
                   src="/assets/lookbook/65.png" 
                   alt="Anchus Lookbook - Recién Nacido" 
-                  width="600"
-                  height="450"
+                  width="835"
+                  height="626"
                   loading="lazy"
                   decoding="async"
                   className="lookbook-img" 
@@ -128,19 +128,19 @@ export default function Lookbook() {
               <picture>
                 <source 
                   type="image/avif" 
-                  srcSet="/assets/lookbook/66_600.avif 600w, /assets/lookbook/66_350.avif 350w"
+                  srcSet="/assets/lookbook/66_350.avif 350w, /assets/lookbook/66_600.avif 600w, /assets/lookbook/66.avif 835w"
                   sizes="(max-width: 992px) 50vw, 30vw"
                 />
                 <source 
                   type="image/webp" 
-                  srcSet="/assets/lookbook/66_600.webp 600w, /assets/lookbook/66_350.webp 350w"
+                  srcSet="/assets/lookbook/66_350.webp 350w, /assets/lookbook/66_600.webp 600w, /assets/lookbook/66.webp 835w"
                   sizes="(max-width: 992px) 50vw, 30vw"
                 />
                 <img 
                   src="/assets/lookbook/66.png" 
                   alt="Anchus Lookbook - Colegial" 
-                  width="600"
-                  height="450"
+                  width="835"
+                  height="626"
                   loading="lazy"
                   decoding="async"
                   className="lookbook-img" 
