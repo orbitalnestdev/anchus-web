@@ -1,28 +1,63 @@
-# DirectAdmin / Apache Configuration for Anchus Web SPA
+# ==========================================================================
+# ANCHUS.COM.AR - SECURITY & SEO DECONTAMINATION .HTACCESS
+# ==========================================================================
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  
-  # Force HTTPS
+
+  # ----------------------------------------------------------------------
+  # 1. FORCE HTTPS
+  # ----------------------------------------------------------------------
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Direct Existing Files / Directories to themselves
+  # ----------------------------------------------------------------------
+  # 2. BLOCK & PURGE SPAM / MALWARE URLS (HTTP 410 GONE)
+  # Tells Googlebot these spam URLs are permanently gone so it drops them fast.
+  # ----------------------------------------------------------------------
+  # Block /shopdetail/ path and variants
+  RewriteCond %{REQUEST_URI} ^/shopdetail [NC,OR]
+  RewriteCond %{REQUEST_URI} shopdetail [NC,OR]
+  # Block common spam query string parameters
+  RewriteCond %{QUERY_STRING} (shopdetail|product_id=|goods_id=|cat_id=) [NC]
+  RewriteRule ^ - [R=410,L]
+
+  # ----------------------------------------------------------------------
+  # 3. ALLOW VALID API / WHOLESALE PORTAL DIRECTORIES (IF ANY)
+  # Exclude /mayorista/ from SPA routing if hosted on the same domain
+  # ----------------------------------------------------------------------
+  RewriteCond %{REQUEST_URI} ^/mayorista/ [NC]
+  RewriteRule ^ - [L]
+
+  # ----------------------------------------------------------------------
+  # 4. SPA ROUTING FOR ANCHUS REACT WEB
+  # ----------------------------------------------------------------------
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # Fallback all other URLs to index.html for SPA Routing
+  # Fallback all other non-file requests to index.html
   RewriteRule ^ index.html [L]
 </IfModule>
 
-# Browser Caching Headers for Maximum PageSpeed
+# ----------------------------------------------------------------------
+# 5. SECURITY HEADERS
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 6. BROWSER CACHING & PERFORMANCE
+# ----------------------------------------------------------------------
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
 
-  # Images
   ExpiresByType image/avif "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
@@ -30,17 +65,17 @@
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
 
-  # Fonts
   ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType application/font-woff2 "access plus 1 year"
 
-  # CSS & JS
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
   ExpiresByType text/javascript "access plus 1 year"
 </IfModule>
 
-# Enable Gzip Compression
+# ----------------------------------------------------------------------
+# 7. GZIP COMPRESSION
+# ----------------------------------------------------------------------
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/css application/json application/javascript text/javascript image/svg+xml
 </IfModule>

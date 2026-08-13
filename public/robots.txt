@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Block legacy malware / spam URL patterns from Google indexing
+Disallow: /shopdetail/
+Disallow: /*shopdetail*
+Disallow: /*goods_id=*
+Disallow: /*product_id=*
+
+# Allow search engines to index core website pages
+Allow: /#nosotros
+Allow: /#locales
+Allow: /#lookbook
+Allow: /#contacto
+
+# Sitemap Location
+Sitemap: https://anchus.com.ar/sitemap.xml
