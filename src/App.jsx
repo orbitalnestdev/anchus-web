@@ -7,6 +7,7 @@ import Categories from './components/Categories';
 import Features from './components/Features';
 import Lookbook from './components/Lookbook';
 import Stores from './components/Stores';
+import TypebotSection from './components/TypebotSection';
 import WholesaleBanner from './components/WholesaleBanner';
 import Footer from './components/Footer';
 import './styles/index.css';
@@ -23,6 +24,7 @@ export default function App() {
         <Features />
         <Lookbook />
         <Stores />
+        <TypebotSection />
         <WholesaleBanner />
       </main>
       <Footer />

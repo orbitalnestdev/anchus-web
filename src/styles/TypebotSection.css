@@ -1,0 +1,54 @@
+.typebot-section {
+  padding: 70px 0 80px 0;
+  background-color: #faf4e6;
+}
+
+.typebot-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.typebot-title {
+  font-family: 'Jost', 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #5c483c;
+  margin-bottom: 12px;
+}
+
+.typebot-subtitle {
+  font-family: 'Jost', 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5c483c;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.typebot-iframe-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(92, 72, 60, 0.08);
+  overflow: hidden;
+  border: 1px solid rgba(92, 72, 60, 0.1);
+}
+
+@media (max-width: 992px) {
+  .typebot-section {
+    padding: 50px 0 60px 0;
+  }
+
+  .typebot-title {
+    font-size: 24px;
+  }
+
+  .typebot-subtitle {
+    font-size: 14px;
+  }
+}
