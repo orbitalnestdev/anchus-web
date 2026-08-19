@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/Footer.css';
 
 export default function Footer() {
-  const whatsappUrl = "https://api.whatsapp.com/send/?phone=5491123402383&text&type=phone_number&app_absent=0";
   const catalogUrl = "https://anchus.com.ar/mayorista/zonaprivada.php";
   const retailStoreUrl = "https://tiendaanchus.com.ar/";
   const instagramUrl = "https://www.instagram.com/anchuskids/";
@@ -27,7 +26,6 @@ export default function Footer() {
               <li><a href={catalogUrl} target="_blank" rel="noopener noreferrer">CATÁLOGO</a></li>
               <li><a href="#nosotros">CÓMO COMPRAR</a></li>
               <li><a href="#lookbook">LOOKBOOK</a></li>
-              <li><a href={whatsappUrl} target="_blank" rel="noopener noreferrer">QUIERO SER CLIENTE</a></li>
             </ul>
           </div>
 
@@ -48,7 +46,6 @@ export default function Footer() {
             <ul className="footer-links contact-links">
               <li><a href="mailto:info@anchus.com.ar">INFO@ANCHUS.COM.AR</a></li>
               <li><a href="tel:01120550734">(011) 2055-0734</a></li>
-              <li><a href={whatsappUrl} target="_blank" rel="noopener noreferrer">WHATSAPP MAYORISTA</a></li>
               <li className="social-link">
                 <a href={instagramUrl} target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
                 {' · '}
