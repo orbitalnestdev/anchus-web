@@ -22,8 +22,16 @@ export default function Header() {
           {/* Logo Image */}
           <a href="#" className="site-logo-link">
             <picture>
-              <source type="image/avif" srcSet="/assets/logo.avif" />
-              <source type="image/webp" srcSet="/assets/logo.webp" />
+              <source 
+                type="image/avif" 
+                srcSet="/assets/logo_200.avif 200w, /assets/logo_400.avif 400w" 
+                sizes="160px"
+              />
+              <source 
+                type="image/webp" 
+                srcSet="/assets/logo_200.webp 200w, /assets/logo_400.webp 400w" 
+                sizes="160px"
+              />
               <img 
                 src="/assets/logo.png" 
                 alt="Anchus Trip of Joy" 

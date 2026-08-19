@@ -4,8 +4,10 @@ import '../styles/TypebotBubble.css';
 
 export default function TypebotBubble() {
   const [isOpen, setIsOpen] = useState(false);
+  const [hasOpened, setHasOpened] = useState(false);
 
   const toggleBubble = () => {
+    if (!hasOpened) setHasOpened(true);
     setIsOpen(!isOpen);
   };
 
@@ -31,12 +33,15 @@ export default function TypebotBubble() {
         </div>
 
         <div className="typebot-chat-body">
-          <iframe
-            src="https://tbv.orbitalnest.net/anchus-lead-bot-tq12r26"
-            style={{ border: 'none', width: '100%', height: '100%' }}
-            title="Anchus Lead Bot"
-            loading="lazy"
-          ></iframe>
+          {/* Lazy load iframe ONLY when user clicks bubble to prevent blocking initial page load */}
+          {hasOpened && (
+            <iframe
+              src="https://tbv.orbitalnest.net/anchus-lead-bot-tq12r26"
+              style={{ border: 'none', width: '100%', height: '100%' }}
+              title="Anchus Lead Bot"
+              loading="lazy"
+            ></iframe>
+          )}
         </div>
       </div>
 
