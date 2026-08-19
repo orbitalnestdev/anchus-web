@@ -10,6 +10,7 @@ export default function Header() {
   };
 
   const whatsappUrl = "https://api.whatsapp.com/send/?phone=5491123402383&text&type=phone_number&app_absent=0";
+  const catalogUrl = "https://anchus.com.ar/mayorista/zonaprivada.php";
 
   return (
     <>
@@ -53,14 +54,24 @@ export default function Header() {
 
           {/* Header Action / CTA */}
           <div className="header-actions">
-            <a 
-              href={whatsappUrl} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="btn-header-cta"
-            >
-              QUIERO SER CLIENTE
-            </a>
+            <div className="header-cta-group">
+              <a 
+                href={whatsappUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-header-cta"
+              >
+                QUIERO SER CLIENTE
+              </a>
+              <a 
+                href={catalogUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="header-catalog-link"
+              >
+                INGRESÁ AL CATÁLOGO
+              </a>
+            </div>
 
             {/* Mobile Hamburger Menu Button */}
             <button 
@@ -100,6 +111,15 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 QUIERO SER CLIENTE
+              </a>
+              <a 
+                href={catalogUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="header-catalog-link text-center mt-2 block" 
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                INGRESÁ AL CATÁLOGO
               </a>
             </div>
           </div>
